@@ -155,6 +155,5 @@ can be found [here.](https://github.com/KenetGit/gitNotes/blob/master/SSM%E5%AD%
 
 # Thanks
 
-Thanks to [nomico271](https://github.com/nomico271/SSM_HRMS), you offer a very useful project, and i've added some improvement base on
-your code, more enhance will be done such as `Right Control` or `Session`  using `Shiro` in the v2. thanks again.
+Thanks to [nomico271](https://github.com/nomico271/SSM_HRMS), you have offered me a very useful project, and i've added some improvement base on your code, more enhance will be done such as `Right Control` or `Session`  using `Shiro` in the v2. thanks again.
 
