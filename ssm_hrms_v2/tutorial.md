@@ -198,4 +198,4 @@ public class ShiroUserService {
 ## Run
 
 Run this v2 in your IDEA, you will find some difference compared to v1, all URL that can be visited only when user have loginned can be
-visited directly in v1 but not in this v2, so we have finish an easy version for authentication and authorization.
+visited directly in v1 but not in this v2, so we have finished an easy version for authentication and authorization.
