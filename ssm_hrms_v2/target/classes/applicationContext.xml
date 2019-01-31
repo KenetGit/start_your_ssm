@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--1. 扫描包下的所有注解的bean-->
+    <!-- 但是跳过控制器类，留着让web容器去扫描，否则冲突-->
+    <context:component-scan base-package="com.kenet">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--2. 导入Mybatis配置的bean-->
+    <import resource="classpath:MyBatis.xml"/>
+
+    <!--3. 导入Shiro配置的bean-->
+    <!--注意: Shiro的filter必须放在其他filter之前,现放在 ApplicationContext 中，ApplicationContext
+        先于WebContext初始化，所以Filters也先于web.xml配置中的filters-->
+
+    <import resource="classpath:shiro-config.xml"/>
+</beans>
